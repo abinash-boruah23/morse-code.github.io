@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Kelly+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="intro">
+        <p>Write your messages in</p>
+        <p>––  –––  •–•  ••• •</p>
+    </div>
+    <div class="main">
+        <div class="text-container">
+            <textarea type="text" name="" id="text" placeholder="Alfa Bravo Charlie..." onKeyPress="return prevent(event)"></textarea>
+        </div>
+        <div class="morse-container">
+            <div class="morse-text">
+                <p class="morse"></p>
+            </div>
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/abinash-boruah-7169b81bb/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/rockkidd23"><i class="fa-brands fa-github-square"></i></a>
+        </div>
+        <div class="copy">© Designed and Developed by Abinash</div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="./audio.js"></script>
+    <script src="./map.js"></script>
+</body>
+</html>
